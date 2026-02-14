@@ -1,0 +1,94 @@
+:root {
+    --bg-main: #fcfaf7; /* Lightest cream from your link */
+    --card-bg: #f3ede4; /* Soft beige */
+    --text-dark: #3e3832; /* Deep dark brown for titles */
+    --text-muted: #6b635a;
+    --accent: #a39382;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg-main);
+    color: var(--text-muted);
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+.container { width: 85%; max-width: 900px; margin: auto; padding: 60px 0; }
+
+/* Simple Heading */
+.simple-heading {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: var(--text-dark);
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+/* Intro Box with Curved Edges */
+.intro-box {
+    background-color: var(--card-bg);
+    padding: 40px;
+    border-radius: 40px; /* Large curved edges */
+    text-align: center;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+}
+
+.intro-box h2 { font-family: 'Playfair Display', serif; font-size: 2rem; margin: 0; }
+.meta-info { font-size: 0.9rem; letter-spacing: 1px; opacity: 0.7; margin: 10px 0; }
+
+/* Section Headings */
+.section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: var(--text-dark);
+    margin-bottom: 30px;
+}
+
+/* Curved Cards & Animations */
+.journey-grid, .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+
+.curved-card {
+    background-color: var(--card-bg);
+    padding: 30px;
+    border-radius: 30px; /* Curved edges */
+    transition: transform 0.3s ease;
+}
+
+.curved-card:hover {
+    transform: translateY(-10px); /* Pop up animation */
+    background-color: #ebe3d8;
+}
+
+.curved-card h3 { color: var(--text-dark); margin-top: 0; }
+
+.aspiration-note {
+    margin-top: 30px;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/* Contact Form */
+.contact-wrapper { display: flex; gap: 40px; flex-wrap: wrap; }
+form { flex: 1.5; display: flex; flex-direction: column; gap: 15px; }
+input, textarea {
+    padding: 15px;
+    border-radius: 20px; /* Curved inputs */
+    border: 1px solid #dcd3c8;
+    background: white;
+    font-family: inherit;
+}
+button {
+    background-color: var(--text-dark);
+    color: white;
+    padding: 15px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-details { flex: 1; line-height: 2.2; }

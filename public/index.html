@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Rahiya</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="hero">
+        <div class="container">
+            <h1 class="simple-heading">Portfolio</h1>
+            
+            <div class="intro-box">
+                <h2>Rahiya Kouser</h2>
+                <p class="meta-info">Reg No: 25BCAC51 • BCA Student • Bengaluru</p>
+                <div class="bio">
+                    <p>I am a second-semester BCA student at Kristu Jayanti University with a deep curiosity for how technology shapes our world. As a fast learner and a dedicated problem-solver, I strive to build applications that are as functional as they are aesthetic.</p>
+                    <p>My approach to growth extends beyond the screen; I find my balance on the badminton court, where agility and strategy are key, and in the quiet pages of a good book, which keeps my perspective broad and my mind constantly questioning. For me, technology is more than a career—it's a canvas for continuous learning.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Academic Journey</h2>
+            <div class="journey-grid">
+                <div class="curved-card">
+                    <h3>Huda National School</h3>
+                    <p>Building a foundation of teamwork and adaptive resilience during my early schooling.</p>
+                </div>
+                <div class="curved-card">
+                    <h3>HMR National PU College</h3>
+                    <p>Expanding my analytical thinking and interacting with diverse backgrounds during my 11th and 12th.</p>
+                </div>
+                <div class="curved-card">
+                    <h3>Kristu Jayanti University</h3>
+                    <p>Currently pursuing BCA. A transformative phase unlocking technical mastery and growth opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Skillset & Certifications</h2>
+            <div class="cert-grid">
+                <div class="curved-card cert">
+                    <h4>MongoDB</h4>
+                    <button class="view-btn" onclick="window.open('mongodb_cert.pdf', '_blank')">View Certificate</button>
+                </div>
+                <div class="curved-card cert">
+                    <h4>Front-end Web Dev</h4>
+                    <button class="view-btn" onclick="window.open('frontend_cert.pdf', '_blank')">View Certificate</button>
+                </div>
+                <div class="curved-card cert">
+                    <h4>Git & GitHub</h4>
+                    <button class="view-btn" onclick="window.open('git_cert.pdf', '_blank')">View Certificate</button>
+                </div>
+            </div>
+            <p class="aspiration-note">This is just the beginning of my learning journey. I aspire to dive deeper into technology, constantly acquiring new skills and evolving as a developer.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Connect</h2>
+            <div class="contact-wrapper">
+                <form id="contactForm">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <textarea id="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+                <div class="contact-details">
+                    <p><strong>Instagram:</strong> @rahiyaa._</p>
+                    <p><strong>Phone:</strong> 9738179004</p>
+                    <p><strong>Email:</strong> 25bcac51@kristujayanti.com</p>
+                </div>
+            </div>
+            <p id="responseMessage"></p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
