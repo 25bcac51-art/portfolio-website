@@ -26,6 +26,7 @@ db.run(`CREATE TABLE IF NOT EXISTS messages (
 
 // API Endpoint to handle form submission with email
 app.post('/api/contact', (req, res) => {
+    console.log("New Message Received:", req.body);
     const { name, email, message } = req.body; 
     const sql = `INSERT INTO messages (name, email, message) VALUES (?, ?, ?)`;
 
